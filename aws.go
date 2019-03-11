@@ -273,7 +273,7 @@ func SendToQueue(queueName string, message string) (err error) {
 	return
 }
 
-// Return URL for queue named `queueName`
+// CreateQueue returns URL for queue named `queueName`
 func CreateQueue(queue string) (queueURL string, err error) {
 	sqsService, err := getSQSService()
 	if err != nil {
